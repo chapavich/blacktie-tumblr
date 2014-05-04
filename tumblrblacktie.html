@@ -6,10 +6,8 @@
     
     <title>{block:SearchPage} Search results for: {SearchQuery}{/block:SearchPage} {block:PostSummary}{PostSummary} | {/block:PostSummary}{Title}</title>
     <meta name="description" content="{MetaDescription}">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     
-    <!-- Meta Content -->
+    -- Meta Content -->
     <meta name="text:Header About" content="About">
     <meta name="text:Content About" content="">
     <meta name="text:Header Services" content="Services">
@@ -33,22 +31,28 @@
 
     
     <!-- Images -->
+    <meta name="image:Logo" content="">
     <meta name="image:Header" content="">
     <meta name="image:Divider1" content="">
     <meta name="image:Portfolio Pic1" content="">
     <meta name="image:Portfolio Pic2" content="">
     <meta name="image:Portfolio Pic3" content="">
+ 
 
     <!-- Bootstrap core CSS -->
     <link href="http://static.tumblr.com/7ndzows/Kkkn50o13/bootstrap.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <!-- Custom styles for this template 
     <link href="http://static.tumblr.com/7ndzows/9CLn50o1m/main.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="assets/css/icomoon.css">
     <link href="http://static.tumblr.com/7ndzows/Dbbn50o2g/animate-custom.css" rel="stylesheet">
 
-
+    <!-- Favicon / RSS -->
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="alternate" type="application/rss+xml" name="RSS" href="{RSS}"/>
     
+    <!-- GoogleFont -->
     <link href='http://fonts.googleapis.com/css?family={text:Google Font Body}:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family={text:Google Font Header}:400,300,700' rel='stylesheet' type='text/css'>
     
@@ -338,12 +342,12 @@ a:after {
 
 #headerwrap {
 	background: url({image:Header}) #333333; no-repeat center top;
-	margin-top: -50px;
-	padding-top:120px;
+	margin-top: -20px;
+	padding-top:180px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+	min-height: 620px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -811,7 +815,7 @@ a:after {
 		<!-- ==== HEADERWRAP ==== -->
 	    <div id="headerwrap" id="home" name="home">
 			<header class="clearfix">
-	  		 		<h1><span class="icon icon-shield"></span></h1>
+	  		 		<img src="{image:Logo}" alt="Responsive image" class="img-rounded">
 	  		 		<h2>{Title}</h2>
 	  		 		<p>{Description}</p>
 	  		</header>	    
@@ -865,6 +869,7 @@ a:after {
 		
 		
 		<!-- ==== SERVICES ==== -->
+		<div id="greywrap">
 		<div class="container" id="services" name="services">
 			<br>
 			<br>
@@ -878,7 +883,7 @@ a:after {
 			</div><!-- row -->
 			
 		</div><!-- container -->
-  		
+  			</div><!-- grey -->
 
 		<!-- ==== SECTION DIVIDER2 -->
 		<section class="section-divider textdivider divider2">
@@ -912,8 +917,9 @@ a:after {
 				</div><!-- col-lg-6 -->
 			</div><!-- row -->
 		</div><!-- container -->
+	
 
-		<!-- ==== GREYWRAP ==== -->
+		<!-- ==== GREYWRAP ==== 
 		<div id="greywrap">
 			<div class="container">
 				<div class="row">
@@ -925,23 +931,23 @@ a:after {
 						<p>Do you want to be one of use? Sure you want, because we are an awesome team!. Here we work hard every day to craft pixel perfect sites.</p>
 						<p><a class="btn btn-success">Contact Us</a></p>
 					</div>					
-				</div><!-- row -->
+				</div><!-- row 
 			</div>
 			<br>
 			<br>
 		</div><!-- greywrap -->
 		
-		<!-- ==== SECTION DIVIDER3 -->
+		<!-- ==== SECTION DIVIDER3 
 		<section class="section-divider textdivider divider3">
 			<div class="container">
 				<h1>DESIGN SOLVE PROBLEMS</h1>
 				<hr>
 				<p>From the purely practical to the richly philosophical, design is the solution to a host of challenges.</p>
-			</div><!-- container -->
-		</section><!-- section -->
+			</div><!-- container 
+		</section> section -->
 		
 		<!-- ==== PORTFOLIO ==== -->
-		<div class="container" id="portfolio" name="portfolio">
+		<div class="container divider3 textdivider" id="portfolio" name="portfolio">
 		<br>
 			<div class="row">
 				<br>
@@ -960,7 +966,7 @@ a:after {
 							<img class="img-responsive" src="{image:Portfolio Pic1}" alt=""></a>
 							<figcaption>
 								<h5>{text:Name Portfolio1}</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+								<a data-toggle="modal" href="#myModal1" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
@@ -996,7 +1002,7 @@ a:after {
 							<img class="img-responsive text-center" src="{image:Portfolio Pic2}" alt=""></a>
 							<figcaption>
 								<h5>{text:Name Portfolio2}</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+								<a data-toggle="modal" href="#myModal2" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
@@ -1056,16 +1062,17 @@ a:after {
 		</div><!-- /row -->
 	</div><!-- /container -->
 
-		<!-- ==== SECTION DIVIDER4 ==== -->
+		<!-- ==== SECTION DIVIDER4 ==== 
 		<section class="section-divider textdivider divider4">
 			<div class="container">
 				<h1>DESIGN CREATES EMOTIONAL CONNECTION</h1>
 				<hr>
 				<p>There’s more to design than meets the eye. It’s when it meets the heart that design creates a meaningful, lasting connection with the audience.</p>
-			</div><!-- container -->
+			</div><!-- container 
 		</section><!-- section -->
 		
 		<!-- ==== BLOG ==== -->
+	
 		<div class="container" id="blog" name="blog">
 		<br>
 			<div class="row">
@@ -1115,16 +1122,18 @@ a:after {
 
 		
 		<!-- ==== SECTION DIVIDER6 ==== -->
-		<section class="section-divider textdivider divider6">
+		<section class="section-divider textdivider divider6" id="contact">
 			<div class="container">
-				<h1>CRAFTED IN NEW YORK, USA.</h1>
+				<h1>{text:Header Contact}</h1>
 				<hr>
 				<p>Some Address 987,</p>
 				<p>+34 9884 4893</p>
 				<p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p>
+				<p><a class="btn btn-success" href="mailto:stockmusicth@gmail.com">Contact Us</a></p>
 			</div><!-- container -->
 		</section><!-- section -->
 		
+		<!-- 
 		<div class="container" id="contact" name="contact">
 			<div class="row">
 			<br>
@@ -1141,7 +1150,7 @@ a:after {
 						<span class="icon icon-twitter"></span> <a href="#"> @blacktie_co </a> <br/>
 						<span class="icon icon-facebook"></span> <a href="#"> BlackTie Agency </a> <br/>
 					</p>
-				</div><!-- col -->
+				</div> <!-- col 
 				
 				<div class="col-lg-4">
 					<h3>Newsletter</h3>
@@ -1165,16 +1174,16 @@ a:after {
 						      <button type="submit" class="btn btn-success">Sign in</button>
 						    </div>
 						  </div>
-					   </form><!-- form -->
+					   </form><!-- form 
 					</p>
-				</div><!-- col -->
+				</div><!-- col 
 				
 				<div class="col-lg-4">
 					<h3>Support Us</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				</div><!-- col -->
+				</div><!-- col 
 
-			</div><!-- row -->
+			</div><!-- row 
 		
 		</div><!-- container -->
 
