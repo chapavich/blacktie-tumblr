@@ -15,7 +15,13 @@
     <meta name="text:Header Services" content="">
     <meta name="text:Content Services" content="">
     <meta name="text:Header Team" content="">
-    <meta name="text:Content Team" content="">
+    <meta name="text:Content Team1" content="">
+    <meta name="text:Content Team2" content="">
+    
+    <!-- Font -->
+    <meta name="text:Google Font Header" content="Raleway">
+    <meta name="text:Google Font Body" content="Lato">
+
     
     <!-- Images -->
     <meta name="image:Header" content="">
@@ -30,8 +36,8 @@
 
 
     
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family={text:Google Font Body}:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family={text:Google Font Header}:400,300,700' rel='stylesheet' type='text/css'>
     
     <script src="http://static.tumblr.com/7ndzows/iVTn50o54/jquery.min.js"></script>
 	<script type="text/javascript" src="http://static.tumblr.com/7ndzows/a2Vn50o6e/modernizr.custom.js"></script>
@@ -130,7 +136,7 @@ body {
 }
 
 body {
-    font-family: "Lato";
+    font-family: '{text:Google Font Body}';
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -205,7 +211,7 @@ a img {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway";
+    font-family: '{text:Google Font Header}';
     font-weight: 300;
     color: #333;
 }
@@ -523,7 +529,7 @@ a:after {
 }
 
 .service-active p {
-	font-family: 'Lato', sans-serif;
+	font-family: '{text:Google Font Body}', sans-serif;
 	padding-top: 10px;
 }
 
@@ -686,7 +692,7 @@ a:after {
 		font-size: 80px;
 	}
 	#headerwrap h2 {
-		font-size: 30px;
+		font-size: 40px;
 		line-height: 38px;
 	}
 	#headerwrap p {
@@ -707,7 +713,7 @@ a:after {
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><p></p>
             <span class="fa fa-bars" style="font-size:30px; color:#3498db;"></span>
           </button>
           <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a>
@@ -769,6 +775,7 @@ a:after {
 				<br>
 				<div class="col-lg-offset-2 col-lg-8">
 					{text:Content About}
+					</p>
 				</div><!-- col-lg -->
 			</div><!-- row -->
 		</div><!-- container -->
@@ -816,46 +823,19 @@ a:after {
 				<hr>
 				<br>
 				<br>
-				<div class="col-lg-3 centered">
-					<img class="img img-circle" src="assets/img/team/team01.jpg" height="120px" width="120px" alt="">
-					<br>
-					<h4><b>Mike Arney</b></h4>
-					<a href="#" class="icon icon-twitter"></a>
-					<a href="#" class="icon icon-facebook"></a>
-					<a href="#" class="icon icon-flickr"></a>
-					<p>Mike combines an expert technical knowledge with a real eye for design. Working with clients from a wide range of industries, he fully understands client objectives when working on a project, large or small.</p>
-				</div><!-- col-lg-3 -->
 				
-				<div class="col-lg-3 centered">
-					<img class="img img-circle" src="assets/img/team/team02.jpg" height="120px" width="120px" alt="">
-					<br>
-					<h4><b>Tim Davies</b></h4>
-					<a href="#" class="icon icon-twitter"></a>
-					<a href="#" class="icon icon-facebook"></a>
-					<a href="#" class="icon icon-flickr"></a>
-					<p>Tim is an experienced marcoms practitioner and manages projects from inception to delivery. He understands the synergy between great design and commercial effectiveness which shines through on every project.</p>
-				</div><!-- col-lg-3 -->
-				
-				<div class="col-lg-3 centered">
+				<div class="col-lg-6 centered">
 					<img class="img img-circle" src="assets/img/team/team03.jpg" height="120px" width="120px" alt="">
 					<br>
-					<h4><b>Michele Lampa</b></h4>
-					<a href="#" class="icon icon-twitter"></a>
-					<a href="#" class="icon icon-facebook"></a>
-					<a href="#" class="icon icon-flickr"></a>
-					<p>Be a creative director is a hard task, but Michele loves what she does. Her combination of knowledge and expertise is an important pillar in our agency.</p>
-				</div><!-- col-lg-3 -->
-				
-				<div class="col-lg-3 centered">
+					{text:Content Team1}
+					<p></p>
+				</div><!-- col-lg-6 -->
+				<div class="col-lg-6 centered">
 					<img class="img img-circle" src="assets/img/team/team04.jpg" height="120px" width="120px" alt="">
 					<br>
-					<h4><b>Jaye Smith</b></h4>
-					<a href="#" class="icon icon-twitter"></a>
-					<a href="#" class="icon icon-facebook"></a>
-					<a href="#" class="icon icon-flickr"></a>
-					<p>Jaye began making websites when animated logos and scrolling text were cool, but has since found a love for simplicity, creating websites that are a pleasure to browse. Monkey Island Fan.</p>
-				</div><!-- col-lg-3 -->
-				
+					{text:Content Team2}
+					<p></p>
+				</div><!-- col-lg-6 -->
 			</div><!-- row -->
 		</div><!-- container -->
 
