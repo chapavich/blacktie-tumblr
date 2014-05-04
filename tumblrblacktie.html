@@ -10,13 +10,22 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     
     <!-- Meta Content -->
-    <meta name="text:Header About" content="">
+    <meta name="text:Header About" content="About">
     <meta name="text:Content About" content="">
-    <meta name="text:Header Services" content="">
+    <meta name="text:Header Services" content="Services">
     <meta name="text:Content Services" content="">
-    <meta name="text:Header Team" content="">
+    <meta name="text:Header Team" content="Team">
     <meta name="text:Content Team1" content="">
     <meta name="text:Content Team2" content="">
+    <meta name="text:Header Portfolio" content="Head">
+    <meta name="text:Name Portfolio1" content="Name1">
+    <meta name="text:Content Portfolio1" content="Content">
+    <meta name="text:Name Portfolio2" content="Name2">
+    <meta name="text:Content Portfolio2" content="Content">
+    <meta name="text:Name Portfolio3" content="Name3">
+    <meta name="text:Content Portfolio3" content="Content">
+    <meta name="text:Header Blog" content="Blog">
+    <meta name="text:Header Contact" content="Contact">
     
     <!-- Font -->
     <meta name="text:Google Font Header" content="Raleway">
@@ -26,6 +35,9 @@
     <!-- Images -->
     <meta name="image:Header" content="">
     <meta name="image:Divider1" content="">
+    <meta name="image:Portfolio Pic1" content="">
+    <meta name="image:Portfolio Pic2" content="">
+    <meta name="image:Portfolio Pic3" content="">
 
     <!-- Bootstrap core CSS -->
     <link href="http://static.tumblr.com/7ndzows/Kkkn50o13/bootstrap.css" rel="stylesheet">
@@ -171,6 +183,7 @@ margin-left: -15px;
 .navbar-default {
 border-color: transparent;
 background-color: #dadada;
+margin-top: 13px;
 }
 
 
@@ -932,21 +945,21 @@ a:after {
 		<br>
 			<div class="row">
 				<br>
-				<h1 class="centered">WE CREATE COOL STUFF</h1>
+				<h1 class="centered">{text:Header Portfolio}</h1>
 				<hr>
 				<br>
 				<br>
 			</div><!-- /row -->
 			<div class="container">
 			<div class="row">	
-			
 				<!-- PORTFOLIO IMAGE 1 -->
-				<div class="col-md-4 ">
+				<div class="col-md-4 col-sm-6 centered">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt="">
+						    <a data-toggle="modal" href="#myModal1" class="btn btn-primary btn-lg">
+							<img class="img-responsive" src="{image:Portfolio Pic1}" alt=""></a>
 							<figcaption>
-								<h5>DASHBOARD</h5>
+								<h5>{text:Name Portfolio1}</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
@@ -957,17 +970,15 @@ a:after {
 						 <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
 						      a modal for each of your projects. -->
 						      
-						  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						    <div class="modal-dialog">
 						      <div class="modal-content">
 						        <div class="modal-header">
 						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Project Title</h4>
+						          <h4 class="modal-title">{text:Name Portfolio1}</h4>
 						        </div>
 						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>
-						          <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
-						          <p><b><a href="#">Visit Site</a></b></p>
+						          <p>{text:Content Portfolio1}</p>
 						        </div>
 						        <div class="modal-footer">
 						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -978,72 +989,68 @@ a:after {
 				
 				
 				<!-- PORTFOLIO IMAGE 2 -->
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-6 centered">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio02.jpg" alt="">
+						<a data-toggle="modal" href="#myModal2" class="btn btn-primary btn-lg">
+							<img class="img-responsive text-center" src="{image:Portfolio Pic2}" alt=""></a>
 							<figcaption>
-								<h5>UI DESIGN</h5>
+								<h5>{text:Name Portfolio2}</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
+				
+				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">{text:Name Portfolio2}</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p>{text:Content Portfolio2}</p>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
 				
 				<!-- PORTFOLIO IMAGE 3 -->
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-6 centered">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio03.jpg" alt="">
+						<a data-toggle="modal" href="#myModal3" class="btn btn-primary btn-lg">
+							<img class="img-responsive" src="{image:Portfolio Pic3}" alt=""></a>
 							<figcaption>
-								<h5>ANDROID PAGE</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+								<h5>{text:Name Portfolio3}</h5>
+								<a data-toggle="modal" href="#myModal3" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
 			</div><!-- /row -->
+			
+			<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">{text:Name Portfolio3}</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p>{text:Content Portfolio3}</p>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
 
-				<!-- PORTFOLIO IMAGE 4 -->
-			<div class="row">	
-				<div class="col-md-4 ">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio04.jpg" alt="">
-							<figcaption>
-								<h5>PROFILE</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				<!-- PORTFOLIO IMAGE 5 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio05.jpg" alt="">
-							<figcaption>
-								<h5>TWITTER STATUS</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				<!-- PORTFOLIO IMAGE 6 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio06.jpg" alt="">
-							<figcaption>
-								<h5>PHONE MOCKUP</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-			</div><!-- /row -->
 			<br>
 			<br>
 		</div><!-- /row -->
@@ -1063,7 +1070,7 @@ a:after {
 		<br>
 			<div class="row">
 				<br>
-				<h1 class="centered">WE ARE STORYTELLERS</h1>
+				<h1 class="centered">{text:Header Blog}</h1>
 				<hr>
 				<br>
 				<br>
@@ -1121,7 +1128,7 @@ a:after {
 		<div class="container" id="contact" name="contact">
 			<div class="row">
 			<br>
-				<h1 class="centered">THANKS FOR VISITING US</h1>
+				<h1 class="centered">{text:Header Contact}</h1>
 				<hr>
 				<br>
 				<br>
