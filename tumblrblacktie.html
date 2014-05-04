@@ -7,8 +7,17 @@
     <title>{block:SearchPage} Search results for: {SearchQuery}{/block:SearchPage} {block:PostSummary}{PostSummary} | {/block:PostSummary}{Title}</title>
     <meta name="description" content="{MetaDescription}">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
-
     
+    <!-- Meta Content -->
+    <meta name="text:Header About" content="">
+    <meta name="text:Content About" content="">
+    <meta name="text:Header Services" content="">
+    <meta name="text:Content Services" content="">
+    <meta name="text:Header Team" content="">
+    <meta name="text:Content Team" content="">
+    
+    <!-- Images -->
+    <meta name="image:Header" content="">
 
     <!-- Bootstrap core CSS -->
     <link href="http://static.tumblr.com/7ndzows/Kkkn50o13/bootstrap.css" rel="stylesheet">
@@ -307,7 +316,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/header_bg.jpg) #333333; no-repeat center top;
+	background: url({image:Header}) #333333; no-repeat center top;
 	margin-top: -50px;
 	padding-top:120px;
 	text-align:center;
@@ -727,43 +736,39 @@ a:after {
 	  		</header>	    
 	    </div><!-- /headerwrap -->
 
-		<!-- ==== GREYWRAP ==== -->
+		<!-- ==== GREYWRAP ==== 
 		<div id="greywrap">
 			<div class="row">
 				<div class="col-lg-4 callout">
 					<span class="icon icon-stack"></span>
 					<h2>Bootstrap 3</h2>
 					<p>Shield Theme is powered by Bootstrap 3. The incredible Mobile First Framework is the best option to run your website. </p>
-				</div><!-- col-lg-4 -->
+				</div> <!-- col-lg-4 
 					
 				<div class="col-lg-4 callout">
 					<span class="icon icon-eye"></span>
 					<h2>Retina Ready</h2>
 					<p>You can use this theme with your iPhone, iPad or MacBook Pro. This theme is retina ready and that is awesome. </p>
-				</div><!-- col-lg-4 -->	
+				</div><!-- col-lg-4 	
 				
 				<div class="col-lg-4 callout">
 					<span class="icon icon-heart"></span>
 					<h2>Crafted with Love</h2>
 					<p>We don't make sites, we craft themes with love & passion. That is our most valued secret. We only do thing that we love.   </p>
-				</div><!-- col-lg-4 -->	
-			</div><!-- row -->
+				</div><!-- col-lg-4 	
+			</div><!-- row 
 		</div><!-- greywrap -->
 		
 		<!-- ==== ABOUT ==== -->
 		<div class="container" id="about" name="about">
 			<div class="row white">
 			<br>
-				<h1 class="centered">“ให้ดนตรีช่วยเล่าเรื่องราวของคุณ”</h1>
+				<h1 class="centered">{text:Header About}</h1>
 				<hr>
-				
-				<div class="col-lg-6">
-					<p>เรา Motion Square Music นำเสนอหนทางที่ “ง่ายที่สุด” และ “เร็วที่สุด” สำหรับคนทำภาพยนต์ทุกๆแนวไม่ว่าจะสั้นหรือยาว เกมส์ โฆษณาและสื่ออื่นๆ ด้วยเพลงจาก composer รุ่นใหม่ที่มีประสบการณ์ ที่เปิดให้คุณสามารถซื้อหรือสั่งทำและนำไปใช้ในโปรเจ็คของคุณได้ทันที ด้วยราคาที่เป็นมิตรทำให้คุณเองก็สามารถได้ใช้งานดีๆที่ช่วยยกระดับโปรเจ็ค ของคุณ แม้จะมีงบการเงินที่จำกัด เริ่มต้นที่ 350 บาท</p>
-				</div><!-- col-lg-6 -->
-				
-				<div class="col-lg-6">
-					<p>Over the past four years, we’ve provided more than $1 million in combined cash and pro bono support to Way to Grow, an early childhood education and nonprofit organization. Other community giving involvement throughout our agency history includes pro bono work for more than 13 organizations, direct giving, a scholarship program through the Minneapolis College of Art & Design, board memberships, and ongoing participation in the Keystone Club, which gives five percent of our company’s earnings back to the community each year.</p>
-				</div><!-- col-lg-6 -->
+				<br>
+				<div class="col-lg-offset-2 col-lg-8">
+					{text:Content About}
+				</div><!-- col-lg -->
 			</div><!-- row -->
 		</div><!-- container -->
 		
@@ -782,25 +787,14 @@ a:after {
 			<br>
 			<br>
 			<div class="row">
-				<h2 class="centered">ONE BRAND, ONE VOICE.</h2>
+				
+			<h1 class="centered">{text:Header Services}</h1>
 				<hr>
-				<br>
-				<div class="col-lg-offset-2 col-lg-8">
-					<p>Employees and consumers. Two halves of a brand’s entirety, the whole of a brand’s audience. Sometimes these two halves have very different viewpoints, creating a weak spot in the brand story. Weakness tarnishes credibility. Brands that aren’t credible aren’t viable.
-					</p>
-					<p>We squash weakness by designing the whole brand story. It’s crafted around the truism held by employees and consumers to create an experience that connects from the inside out.</p>
-					<p>By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the audience embraces. That’s when the brand can truly flex its muscles.</p>
-				</div><!-- col-lg -->
+				
+				{text:Content Services}
+				
 			</div><!-- row -->
 			
-			<div class="row">
-				<h2 class="centered">MOBILE FIRST THINKING, ALWAYS.</h2>
-				<hr>
-				<br>
-				<div class="col-lg-offset-2 col-lg-8">
-					<img class="img-responsive" src="assets/img/iphone.png" alt="">
-				</div><!-- col -->
-			</div><!-- row -->
 		</div><!-- container -->
   		
 
@@ -817,7 +811,7 @@ a:after {
 		<div class="container" id="team" name="team">
 		<br>
 			<div class="row white centered">
-				<h1 class="centered">MEET OUR AWESOME TEAM</h1>
+				<h1 class="centered">{text:Header Team}</h1>
 				<hr>
 				<br>
 				<br>
