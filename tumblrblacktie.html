@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SHIELD - Free Bootstrap 3 Theme">
-    <meta name="author" content="Carlos Alvarez - Alvarez.is - blacktie.co">
+    
+    <title>{block:SearchPage} Search results for: {SearchQuery}{/block:SearchPage} {block:PostSummary}{PostSummary} | {/block:PostSummary}{Title}</title>
+    <meta name="description" content="{MetaDescription}">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <title> SHIELD - Free Bootstrap 3 Theme</title>
+    
 
     <!-- Bootstrap core CSS -->
     <link href="http://static.tumblr.com/7ndzows/Kkkn50o13/bootstrap.css" rel="stylesheet">
@@ -721,8 +722,8 @@ a:after {
 	    <div id="headerwrap" id="home" name="home">
 			<header class="clearfix">
 	  		 		<h1><span class="icon icon-shield"></span></h1>
-	  		 		<h2>Motion Square Music</h2>
-	  		 		<p>Stock music for Game, Film & Multimedia</p>
+	  		 		<h2>{Title}</h2>
+	  		 		<p>{Description}</p>
 	  		</header>	    
 	    </div><!-- /headerwrap -->
 
