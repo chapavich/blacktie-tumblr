@@ -7,7 +7,7 @@
     <title>{block:SearchPage} Search results for: {SearchQuery}{/block:SearchPage} {block:PostSummary}{PostSummary} | {/block:PostSummary}{Title}</title>
     <meta name="description" content="{MetaDescription}">
     
-    <-- Meta Content -->
+    <!-- Meta Content -->
     <meta name="text:Header About" content="About">
     <meta name="text:Content About" content="">
     <meta name="text:Header Services" content="Services">
@@ -24,12 +24,9 @@
     <meta name="text:Content Portfolio3" content="Content">
     <meta name="text:Header Blog" content="Blog">
     <meta name="text:Header Contact" content="Contact">
-    <meta name="text:Quote1" content="<h1>I have a dream</h1>
-				<hr>
-				<p>- Martin Luther</p>">
-    <meta name="text:Quote2" content="<h1>WOW</h1>
-				<hr>
-				<p>Doge</p>">
+    <meta name="text:Content Contact" content="Place">
+    <meta name="text:Quote1" content="">
+    <meta name="text:Quote2" content="">
     
     <!-- Font -->
     <meta name="text:Google Font Header" content="Raleway">
@@ -39,10 +36,12 @@
     <!-- Images -->
     <meta name="image:Logo" content="">
     <meta name="image:Header" content="">
-    <meta name="image:Divider1" content="">
+    <meta name="image:Quote BG" content="">
+    <meta name="image:Portfolio BG" content="">
     <meta name="image:Portfolio Pic1" content="">
     <meta name="image:Portfolio Pic2" content="">
     <meta name="image:Portfolio Pic3" content="">
+    <meta name="image:Contact BG" content="">
  
 
     <!-- Bootstrap core CSS -->
@@ -498,7 +497,7 @@ a:after {
 /* Section Dividers Backgrounds */
 
 .divider1 {
-	background: #333333 url('{image:Divider1}');
+	background: #333333 url('{image:Quote BG}');
 	no-repeat center;
 	background-attachment: relative;
 	background-position: center center;
@@ -514,7 +513,7 @@ a:after {
 }
 
 .divider2 {
-    background: #333333 url('{image:Divider1}');
+    background: #333333 url('{image:Quote BG}');
     no-repeat center;
 	background-attachment: relative;
 	background-position: center center;
@@ -530,7 +529,7 @@ a:after {
 }
 
 .divider3 {
-	background: #333333 url('{image:Divider1}');
+	background: #333333 url('{image:Portfolio BG}');
 	margin-top: 0px;
 	no-repeat center;
 	background-attachment: relative;
@@ -547,7 +546,7 @@ a:after {
 }
 
 .divider4 {
-	background: #333333 url('{image:Divider1}');
+	background: #333333 url('{image:Quote BG}');
 	no-repeat center;
 	background-attachment: relative;
 	background-position: center center;
@@ -563,7 +562,7 @@ a:after {
 }
 
 .divider6 {
-	background: #333333 url('{image:Divider1}');
+	background: #333333 url('{image:Contact BG}');
 	no-repeat center;
 	background-attachment: relative;
 	background-position: center center;
@@ -867,7 +866,7 @@ a:after {
 		<!-- ==== SECTION DIVIDER1 -->
 		<section class="section-divider textdivider divider1">
 			<div class="container">
-				{text:Quote1}
+				<h1>{text:Quote1}</h1><hr>
 			</div><!-- container -->
 		</section><!-- section -->
 		
@@ -892,7 +891,7 @@ a:after {
 		<!-- ==== SECTION DIVIDER2 -->
 		<section class="section-divider textdivider divider2">
 			<div class="container">
-			    {text:Quote2}
+			    <h1>{text:Quote2}</h1><hr>
 			</div><!-- container -->
 		</section><!-- section -->
 
@@ -1128,9 +1127,7 @@ a:after {
 			<div class="container">
 				<h1>{text:Header Contact}</h1>
 				<hr>
-				<p>Some Address 987,</p>
-				<p>+34 9884 4893</p>
-				<p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p>
+				<p>{text:Content Contact}</p>
 				<p><a class="btn btn-success" href="mailto:stockmusicth@gmail.com">Contact Us</a></p>
 			</div><!-- container -->
 		</section><!-- section -->
